@@ -1,0 +1,178 @@
+.App {
+  min-height: 100vh;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.App-header {
+  background-color: #1e1e1e;
+  padding: 0.75rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.App-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+  background: linear-gradient(45deg, #fff 30%, #a0a0a0 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.live-indicator {
+  background-color: #4caf50;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 1rem;
+}
+
+.table-container {
+  flex: 1;
+  padding: 1rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 60px); /* Subtract header height */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.crypto-table {
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  table-layout: fixed;
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+
+.crypto-table th,
+.crypto-table td {
+  padding: 0.5rem;
+  text-align: right;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+/* Column widths */
+.crypto-table th:nth-child(1),
+.crypto-table td:nth-child(1) { width: 3%; } /* # */
+
+.crypto-table th:nth-child(2),
+.crypto-table td:nth-child(2) { width: 15%; } /* Name */
+
+.crypto-table th:nth-child(3),
+.crypto-table td:nth-child(3) { width: 5%; } /* Symbol */
+
+.crypto-table th:nth-child(4),
+.crypto-table td:nth-child(4) { width: 8%; } /* Price */
+
+.crypto-table th:nth-child(5),
+.crypto-table td:nth-child(5),
+.crypto-table th:nth-child(6),
+.crypto-table td:nth-child(6),
+.crypto-table th:nth-child(7),
+.crypto-table td:nth-child(7) { width: 6%; } /* Changes */
+
+.crypto-table th:nth-child(8),
+.crypto-table td:nth-child(8),
+.crypto-table th:nth-child(9),
+.crypto-table td:nth-child(9) { width: 10%; } /* Market Cap & Volume */
+
+.crypto-table th:nth-child(10),
+.crypto-table td:nth-child(10),
+.crypto-table th:nth-child(11),
+.crypto-table td:nth-child(11) { width: 10%; } /* Supply */
+
+.crypto-table th:nth-child(12),
+.crypto-table td:nth-child(12) { width: 11%; } /* Chart */
+
+.crypto-table th {
+  background-color: #252525;
+  font-weight: 600;
+  color: #888;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.75rem 0.5rem;
+}
+
+.crypto-table tr:hover {
+  background-color: #252525;
+}
+
+.crypto-table .name-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  padding-right: 1rem;
+  min-width: 200px;
+}
+
+.crypto-table .crypto-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.crypto-name-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.crypto-table .crypto-name {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.crypto-table .crypto-symbol {
+  color: #808080;
+  font-size: 0.8rem;
+}
+
+.change-cell {
+  font-weight: 500;
+}
+
+.change-cell.positive {
+  color: #4caf50;
+}
+
+.change-cell.negative {
+  color: #f44336;
+}
+
+.chart-cell {
+  padding: 0.25rem !important;
+}
+
+.mini-chart {
+  width: 100%;
+  height: 40px;
+  display: block;
+  background-color: #252525;
+  border-radius: 4px;
+}
+
+/* Remove media queries as we're using percentage-based widths */ 
