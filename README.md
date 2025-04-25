@@ -112,6 +112,3 @@ yarn test
 - [x] Local storage for persistent settings
 - [ ] Unit tests
 - [ ] Type Script integration
-
-## License
-[MIT](LICENSE)
