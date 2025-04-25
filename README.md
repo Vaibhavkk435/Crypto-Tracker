@@ -3,8 +3,6 @@
 ## Overview
 A responsive React + Redux Toolkit application that tracks real-time cryptocurrency prices. The app displays detailed information about various cryptocurrencies including price changes, market cap, volume, and supply information in a clean, responsive table interface.
 
-![Demo GIF/Video](path-to-your-demo-gif-or-video)
-
 ## Features
 - Real-time price updates simulating WebSocket connections
 - Responsive table display of 5 cryptocurrency assets (BTC, ETH, USDT, etc.)
